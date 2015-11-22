@@ -2,8 +2,13 @@
 
 #include "LibA_Config.h"
 
-DEFINE_MODULE(LibA)
+#ifdef USE_MODULES
+    module LibA;
+#endif
 
+//DEFINE_MODULE(LibA)
+
+LIBA_EXPORT_NAMESPACE
 namespace LibA {
 
     LIBA_EXPORT_CLASS Apple
