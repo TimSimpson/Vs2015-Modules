@@ -1,12 +1,11 @@
-#pragma once
+#if defined(USE_MODULES) && !defined(LIBA_CREATE)
+    import LibA;
+#elif !defined(FILE_GUARD_LIBA_H)
+#define FILE_GUARD_LIBA_H
 
 #include "LibA_Config.h"
 
-#ifdef USE_MODULES
-    module LibA;
-#endif
-
-//DEFINE_MODULE(LibA)
+DEFINE_MODULE(LibA)
 
 LIBA_EXPORT_NAMESPACE
 namespace LibA {
@@ -29,3 +28,5 @@ namespace LibA {
     LIBA_EXPORT_FUNC int end(const Apple & apple);
 
 }
+
+#endif

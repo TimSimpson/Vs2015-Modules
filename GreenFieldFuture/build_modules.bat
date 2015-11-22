@@ -1,5 +1,6 @@
-REM
+rmdir mod_build /s /q
 md mod_build
+
 
 cl -c /module /module:interface /DUSE_MODULES /Fomod_build\LibA.obj /Iinterface src\LibA.cxx /module:export
 REM TODO: Figure out how to make ifc file appear in correct place.

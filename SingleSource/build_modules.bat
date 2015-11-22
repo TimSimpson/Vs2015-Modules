@@ -1,4 +1,4 @@
-REM CALL "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
+rmdir mod_build /s /q
 md mod_build
 
 REM mod_build LibA.obj
